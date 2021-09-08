@@ -28,7 +28,7 @@ public class Categoria {
 	private String recomendacao;
 	
 	@OneToMany(mappedBy ="categoria" , cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("tema")
+	@JsonIgnoreProperties("categoria")
 	private List <Produto> produto;
 
 	public long getId() {
